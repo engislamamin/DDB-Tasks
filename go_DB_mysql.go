@@ -23,6 +23,7 @@ func dbConn() {
 	dbUser := "root"
 	dbPass := ""
 	dbName := "goblog"
+	//db, err = sql.Open("mysql", "islam:islamamin@tcp(127.0.0.1:3309)/golog")
 
 	db, err = sql.Open(dbDriver, dbUser+":"+dbPass+"@/"+dbName)
 	
